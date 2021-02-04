@@ -1,13 +1,13 @@
 {
-   "title": "MariaDB Operator",
-   "description": "MariaDB Operator",
-   "logo": "_images/logo.png",
+   "title": "Keycloak Operator",
+   "description": "Keycloak Operator",
+   "logo": "_images/keycloak-logo.png",
    "enabled": true,
    "category_label": [
      "Operators"
    ],
    "document": "data-logging-stack",
-   "stack_id": "mariadb-operator",
+   "stack_id": "keycloak-operator",
    "type": "stack",
    "categories": [
      "Database"
@@ -16,7 +16,7 @@
    "has_support": true,
    "has_dataset": false,
    "has_api": false,
-   "git_url": "https://github.com/aradhana14nov/MariaDB-Operator-Playground.git",
+   "git_url": "https://github.com/operator-playground-io/Keycloak-Operator.git",
    "git_commit": "4371a717f11d1ab9e8949bbc5ec62e853f6409df",
    "installTime": "5 minutes",
    "isStacksSaved": true

@@ -1,1 +1,1 @@
-# Keycloak-Operator
+# MariaDB-Operator

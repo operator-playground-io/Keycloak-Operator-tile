@@ -1,6 +1,6 @@
 <h1 align="center">Keycloak Operator</h1> 
 
-![Logo](_images/logo.PNG)
+![Logo](_images/keycloak-logo.png)
 
 
 

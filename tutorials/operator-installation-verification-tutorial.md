@@ -14,8 +14,8 @@ kubectl get csv -n my-keycloak-operator
 You should see a similar output as below.
 
 ```output
-NAME                      DISPLAY            VERSION   REPLACES                  PHASE
-keycloak-operator.v3.2.0   keycloak Operator   3.2.0     keycloak-operator.v3.0.2   Succeeded
+NAME                        DISPLAY             VERSION   REPLACES                    PHASE
+keycloak-operator.v12.0.1   Keycloak Operator   12.0.1    keycloak-operator.v11.0.0   Succeeded
 ```
 
 **Please wait till `PHASE` status will be `Succeeded` and then proceed further.**
@@ -29,6 +29,6 @@ kubectl get pods -n my-keycloak-operator
 You should see a pod starting with 'Keycloak-operator' with Ready value '1/1' and Status 'Running' like the output as below.
 
 ```output
-NAME                                READY   STATUS    RESTARTS   AGE
-keycloak-operator-7574bbdbc9-skdk8   1/1     Running   0          45s
+NAME                                 READY   STATUS    RESTARTS   AGE
+keycloak-operator-668cc5dc75-krw9m   1/1     Running   0          92s
 ```

@@ -35,55 +35,55 @@ kubectl create -f keycloakInstance.yaml -n my-keycloak-operator
 You will see the following output:
 
 ```
-Keycloakinstance.Keycloakcontroller.min.io/Keycloak created
+keycloak.keycloak.org/example-keycloak created
 ```
 
 Check the Pods status:
 
 ```execute
-kubectl get pods -n my-Keycloak-operator
+kubectl get pods -n my-keycloak-operator
 ```
 
 You will see similar to this output:
 
 ```
-NAME                              READY   STATUS    RESTARTS   AGE
-Keycloak-0                           1/1     Running   0          115s
-Keycloak-1                           1/1     Running   0          115s
-Keycloak-2                           1/1     Running   0          115s
-Keycloak-3                           1/1     Running   0          115s
-Keycloak-operator-6cccf9f587-72xcp   1/1     Running   0          17m
+NAME                                       READY   STATUS    RESTARTS   AGE
+pod/keycloak-0                             0/1     Running   4          5m32s
+pod/keycloak-operator-668cc5dc75-krw9m     1/1     Running   0          8m54s
+pod/keycloak-postgresql-85fcff4cdd-xtqml   0/1     Pending   0          5m32s
 ```
 
 Check all the kubernetes resources:
 
 ```execute
-kubectl get all -n my-Keycloak-operator
+kubectl get all -n my-keycloak-operator
 ```
 
 
 You will see similar to this output:
 
 ```
-NAME                                  READY   STATUS    RESTARTS   AGE
-pod/Keycloak-0                           1/1     Running   0          2m8s
-pod/Keycloak-1                           1/1     Running   0          2m8s
-pod/Keycloak-2                           1/1     Running   0          2m8s
-pod/Keycloak-3                           1/1     Running   0          2m8s
-pod/Keycloak-operator-6cccf9f587-72xcp   1/1     Running   0          17m
+NAME                                       READY   STATUS    RESTARTS   AGE
+pod/keycloak-0                             0/1     Running   4          5m32s
+pod/keycloak-operator-668cc5dc75-krw9m     1/1     Running   0          8m54s
+pod/keycloak-postgresql-85fcff4cdd-xtqml   0/1     Pending   0          5m32s
 
-NAME                   TYPE        CLUSTER-IP   EXTERNAL-IP   PORT(S)    AGE
-service/Keycloak-hl-svc   ClusterIP   None         <none>        9000/TCP   2m8s
+NAME                                TYPE        CLUSTER-IP       EXTERNAL-IP   PORT(S)             AGE
+service/keycloak                    ClusterIP   10.99.29.241     <none>        8443/TCP            5m32s
+service/keycloak-discovery          ClusterIP   None             <none>        8080/TCP            5m32s
+service/keycloak-operator-metrics   ClusterIP   10.102.119.233   <none>        8383/TCP,8686/TCP   8m45s
+service/keycloak-postgresql         ClusterIP   10.103.184.123   <none>        5432/TCP            5m32s
 
-NAME                             READY   UP-TO-DATE   AVAILABLE   AGE
-deployment.apps/Keycloak-operator   1/1     1            1           17m
+NAME                                  READY   UP-TO-DATE   AVAILABLE   AGE
+deployment.apps/keycloak-operator     1/1     1            1           8m54s
+deployment.apps/keycloak-postgresql   0/1     1            0           5m32s
 
-NAME                                        DESIRED   CURRENT   READY   AGE
-replicaset.apps/Keycloak-operator-6cccf9f587   1         1         1       17m
+NAME                                             DESIRED   CURRENT   READY   AGE
+replicaset.apps/keycloak-operator-668cc5dc75     1         1         1       8m54s
+replicaset.apps/keycloak-postgresql-85fcff4cdd   1         1         0       5m32s
 
-NAME                     READY   AGE
-statefulset.apps/Keycloak   4/4     2m8s
-
+NAME                        READY   AGE
+statefulset.apps/keycloak   0/1     5m32s
 ```
 
 ### Create NodePort Service to access Keycloak's Pod 

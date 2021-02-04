@@ -16,11 +16,18 @@
     "Install time": ["5 minutes"]
   },
 "deployment_information": {
-  "Operator Project": "NA",
+  "Operator Project": "/home/student/projects/keycloak-operator-yaml",
   "Deployment Namespace": "my-keycloak-operator"
 },
   "commands": [
-    
+    {
+      "description": "Create hostpath for postgresql PVs",
+      "exec": "sudo mkdir -p /var/lib/pgsql/data/userdata && sudo chmod -R 777 /var/lib/pgsql" 
+    },
+    {
+      "description": "Clone and Prepare ",
+      "exec": "cd /home/student/projects && git clone https://github.com/operator-playground-io/keycloak-operator-yaml.git && cd keycloak-operator-yaml && kubectl create -f postgresqlpv.yaml"
+    },
     {
       "description": "Install Operator",
       "exec": "kubectl create -f https://operatorhub.io/install/keycloak-operator.yaml"

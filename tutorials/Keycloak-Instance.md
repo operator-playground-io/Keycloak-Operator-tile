@@ -48,9 +48,9 @@ You will see similar to this output:
 
 ```
 NAME                                       READY   STATUS    RESTARTS   AGE
-pod/keycloak-0                             0/1     Running   4          5m32s
-pod/keycloak-operator-668cc5dc75-krw9m     1/1     Running   0          8m54s
-pod/keycloak-postgresql-85fcff4cdd-xtqml   0/1     Pending   0          5m32s
+pod/keycloak-0                             1/1     Running   3          5m12s
+pod/keycloak-operator-668cc5dc75-sdpdd     1/1     Running   0          8m2s
+pod/keycloak-postgresql-85fcff4cdd-d485l   1/1     Running   5          5m12s
 ```
 
 Check all the kubernetes resources:
@@ -64,25 +64,25 @@ You will see similar to this output:
 
 ```
 NAME                                       READY   STATUS    RESTARTS   AGE
-pod/keycloak-0                             0/1     Running   4          5m32s
-pod/keycloak-operator-668cc5dc75-krw9m     1/1     Running   0          8m54s
-pod/keycloak-postgresql-85fcff4cdd-xtqml   0/1     Pending   0          5m32s
+pod/keycloak-0                             1/1     Running   3          5m12s
+pod/keycloak-operator-668cc5dc75-sdpdd     1/1     Running   0          8m2s
+pod/keycloak-postgresql-85fcff4cdd-d485l   1/1     Running   5          5m12s
 
 NAME                                TYPE        CLUSTER-IP       EXTERNAL-IP   PORT(S)             AGE
-service/keycloak                    ClusterIP   10.99.29.241     <none>        8443/TCP            5m32s
-service/keycloak-discovery          ClusterIP   None             <none>        8080/TCP            5m32s
-service/keycloak-operator-metrics   ClusterIP   10.102.119.233   <none>        8383/TCP,8686/TCP   8m45s
-service/keycloak-postgresql         ClusterIP   10.103.184.123   <none>        5432/TCP            5m32s
+service/keycloak                    ClusterIP   10.96.176.239    <none>        8443/TCP            5m12s
+service/keycloak-discovery          ClusterIP   None             <none>        8080/TCP            5m12s
+service/keycloak-operator-metrics   ClusterIP   10.109.132.56    <none>        8383/TCP,8686/TCP   7m53s
+service/keycloak-postgresql         ClusterIP   10.109.139.250   <none>        5432/TCP            5m12s
 
 NAME                                  READY   UP-TO-DATE   AVAILABLE   AGE
-deployment.apps/keycloak-operator     1/1     1            1           8m54s
-deployment.apps/keycloak-postgresql   0/1     1            0           5m32s
+deployment.apps/keycloak-operator     1/1     1            1           8m2s
+deployment.apps/keycloak-postgresql   1/1     1            1           5m12s
 
 NAME                                             DESIRED   CURRENT   READY   AGE
-replicaset.apps/keycloak-operator-668cc5dc75     1         1         1       8m54s
-replicaset.apps/keycloak-postgresql-85fcff4cdd   1         1         0       5m32s
+replicaset.apps/keycloak-operator-668cc5dc75     1         1         1       8m2s
+replicaset.apps/keycloak-postgresql-85fcff4cdd   1         1         1       5m12s
 
 NAME                        READY   AGE
-statefulset.apps/keycloak   0/1     5m32s
+statefulset.apps/keycloak   1/1     5m12s
 ```
 

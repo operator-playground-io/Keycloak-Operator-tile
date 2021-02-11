@@ -144,3 +144,34 @@ If we don’t have the Ingress addon enabled,we can access Keycloak using NodePo
 <a href="https://##DNS.ip##:30524/auth/admin" target="_blank">https://##DNS.ip##:30524/auth/admin</a> 
 
 
+### Login to the Keycloak admin console
+Before logging into the Admin Console, you need to check what is the Admin Username and Password. The credentials are stored inside the following Secret:
+
+
+Execute below command to get the Credentials Secret:
+
+```execute
+kubectl get keycloak example-keycloak --output="jsonpath={.status.credentialSecret}"
+```
+
+
+Output:
+
+```
+credential-example-keycloak
+```
+
+Next, you need to view the username and password:
+
+```execute
+ADMIN_USERNAME=kubectl get secrets credential-example-keycloak -n my-keycloak-operator --template='{{.data.ADMIN_USERNAME | base64decode }}' &&
+echo "" &&
+ADMIN_PASSWORD=kubectl get secrets credential-example-keycloak -n my-keycloak-operator --template='{{.data.ADMIN_PASSWORD | base64decode }}' &&
+echo "" &&
+echo "Admin Username:                 $ADMIN_USERNAME" &&
+echo "Admin Password:   $ADMIN_PASSWORD" 
+```
+
+
+Navigate to Keycloak URL using your browser and use Admin Username and Admin Password obtained in previous steps to login in keycloak Admin console.
+

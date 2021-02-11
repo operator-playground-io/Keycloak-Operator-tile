@@ -10,14 +10,14 @@
    "stack_id": "keycloak-operator",
    "type": "stack",
    "categories": [
-     "Database"
+     "Security"
    ],
    "is_certified": false,
    "has_support": true,
    "has_dataset": false,
    "has_api": false,
    "git_url": "https://github.com/operator-playground-io/Keycloak-Operator.git",
-   "git_commit": "6cefe22b5112bf462d04e5e991f6842614e34ca7",
+   "git_commit": "57c734f904919e2020b5d7ae309e73ed00d13628",
    "installTime": "5 minutes",
    "isStacksSaved": true
  },

@@ -4,9 +4,15 @@ description: This tutorial explains how create Instances for your Keycloak Opera
 ---
 
 ### Create Keycloak Instance 
+The Keycloak custom resource YAML file contains three properties:
 
+instances - controls the number of instances running in high availability mode.
 
-### Create below yaml file to create Keycloak Operator Instance
+externalAccess - if the enabled is True, the Operator creates a route for OpenShift or an Ingress for Kubernetes for the Keycloak cluster.
+
+externalDatabase - applies only if you want to connect an externally hosted database. 
+
+### Create below yaml to create CR for Keycloak Instance
 
 ```execute
 cat <<'EOF' > keycloakInstance.yaml
@@ -26,17 +32,21 @@ spec:
 EOF
 ```
 
-Execute below command to create Keycloak Operator instance:
+
+Execute below command to create Keycloak instance:
 
 ```execute
 kubectl create -f keycloakInstance.yaml -n my-keycloak-operator
 ```
 
-You will see the following output:
+You will see the following resources created:
 
 ```
 keycloak.keycloak.org/example-keycloak created
 ```
+
+This will start Keycloak on Kubernetes. It will also create an initial admin user with username and password.
+
 
 Check the Pods status:
 
@@ -52,6 +62,9 @@ pod/keycloak-0                             1/1     Running   3          5m12s
 pod/keycloak-operator-668cc5dc75-sdpdd     1/1     Running   0          8m2s
 pod/keycloak-postgresql-85fcff4cdd-d485l   1/1     Running   5          5m12s
 ```
+
+Please wait till Pod STATUS will be "Running" and then proceed further.
+
 
 Check all the kubernetes resources:
 
@@ -85,4 +98,47 @@ replicaset.apps/keycloak-postgresql-85fcff4cdd   1         1         1       5m1
 NAME                        READY   AGE
 statefulset.apps/keycloak   1/1     5m12s
 ```
+
+
+- Create below yaml for NodePort service to access Keycloak Admin Console:
+
+
+```execute
+cat <<'EOF' > keycloaknodeportsvc.yaml
+apiVersion: v1
+kind: Service
+metadata:
+  name: keycloak-svc
+  labels:
+    app: keycloak
+spec:
+  ports:
+  - name: http
+    port: 8443
+    targetPort: 8443
+  selector:
+    app: keycloak
+  type: NodePort
+EOF
+```
+
+- Execute below command to create Keycloak NodePort Service:
+
+```execute
+kubectl create -f nodeportsvc.yaml -n my-keycloak-operator
+```
+
+Output:
+
+```
+service/keycloak-svc created
+```
+
+- Access Keycloak Admin Console:
+
+In this case Keycloak Operator creates an Ingress for Kubernetes for the Keycloak cluster.
+If we don’t have the Ingress addon enabled,we can access Keycloak using NodePort from the following URL:
+
+<a href="https://##DNS.ip##:30100" target="_blank">https://##DNS.ip##:30524</a> 
+
 

@@ -22,7 +22,7 @@
   "commands": [
     {
       "description": "Create hostpath for postgresql PVs",
-      "exec": "sudo mkdir -p /var/lib/pgsql/data && sudo chmod -R 777 /var/lib/pgsql" 
+      "exec": "sudo mkdir -p /var/lib/pgsql/data && sudo chmod -R 777 /var/lib/pgsql/data" 
     },
     {
       "description": "Clone and Prepare ",

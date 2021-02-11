@@ -116,6 +116,7 @@ spec:
   - name: http
     port: 8443
     targetPort: 8443
+    nodePort: 30524
   selector:
     app: keycloak
   type: NodePort
@@ -134,11 +135,12 @@ Output:
 service/keycloak-svc created
 ```
 
-- Access Keycloak Admin Console:
+### Access Keycloak Admin Console
 
 In this case Keycloak Operator creates an Ingress for Kubernetes for the Keycloak cluster.
+
 If we don’t have the Ingress addon enabled,we can access Keycloak using NodePort from the following URL:
 
-<a href="https://##DNS.ip##:30100" target="_blank">https://##DNS.ip##:30524</a> 
+<a href="https://##DNS.ip##:30524/auth/admin" target="_blank">https://##DNS.ip##:30524/auth/admin</a> 
 
 

@@ -143,8 +143,13 @@ If we don’t have the Ingress addon enabled,we can access Keycloak using NodePo
 
 <a href="https://##DNS.ip##:30524/auth/admin" target="_blank">https://##DNS.ip##:30524/auth/admin</a> 
 
+You will see Keycloak Login console as below :
+
+![](_images/console.png)
+
 
 ### Login to the Keycloak admin console
+
 Before logging into the Admin Console, you need to check what is the Admin Username and Password. The credentials are stored inside the following Secret:
 
 

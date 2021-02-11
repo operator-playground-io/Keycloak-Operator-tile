@@ -1,46 +1,41 @@
-{
-   "name":"MinIO Operator Tutorial",
+l{
+   "name":"Keycloak Operator Tutorial",
    "appLayout":"accordion",
    "appTheme":"g90",
    "footer":"footer.md",
    "tutorials":[
       {
-         "description":"Check MinIO Operator Installation status",
+         "description":"how to verify that the Keycloak Operator installed properly in the namespace",
          "duration":"5 min",
          "tutorial_name":"operator-installation-verification-tutorial.md",
-         "title":"1: MinIO Operator Installation status"
+         "title":"1: Keycloak Operator Installation Verification Tutorial"
       },
       {
-         "description":"Learn how to create Instance of MinIO",
+         "description":"Learn how to Create Keycloak Cluster Instance",
          "duration":"15 min",
-         "tutorial_name":"minio-instance-creation-tutorial.md",
+         "tutorial_name":"Keycloak-Instance.md.md",
          "title":"2: Create instance of MinIO"
       },
+      
       {
-         "description":"Learn how to access MinIO's console",
+         "description":"Learn how to access and login to Keycloak Admin Console",
          "duration":"15 min",
-         "tutorial_name":"minio-console.md",
-         "title":"3: Access MinIO's Console"
-      },
-      {
-         "description":"Learn how to Connect to MinIO's Pod to access uploaded data files in MinIO's bucket",
-         "duration":"15 min",
-         "tutorial_name":"connect-to-minio-pod-to-access-uploaded-files.md",
-         "title":"4: Connect to MinIO's Pod"
+         "tutorial_name":"admin-console.md",
+         "title":"3: Login to Keycloak Admin Console"
       },
       {
          "description":"Steps to cleanup Operator",
          "duration":"10 min",
          "tutorial_name":"cleanup.md",
-         "title":"5: Cleanup Operator"
+         "title":"4: Cleanup Operator"
       }
       
    ],
   "usefulLinks":[
       {
-         "title":"MinIO Operator",
-         "description":"MinIO Operator ",
-         "url":"https://operatorhub.io/operator/minio-operator"
+         "title":"Keycloak Operator",
+         "description":"Keycloak Operator ",
+         "url":"https://operatorhub.io/operator/keycloak-operator"
       }
    ]
 }

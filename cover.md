@@ -30,7 +30,6 @@ In this tutorial,we are going to cover following topics:
 3. Login to Keycloak Admin Console with Keycloak Operator.
 4. Create Keycloak Realm. 
 5. Create Keycloak User.
-6. Create a Client. 
-7. Authenticate a sample application using Keycloak server.
-8. Cleanup Operators.
+6. Create a Client and authenticate a sample application using Keycloak server.
+7. Cleanup Operators.
   

@@ -26,3 +26,12 @@ Steps:
 
 5. Click Save
 
+
+The user will need an initial password set to be able to login. To do this:
+
+1. Click Credentials (top of the page).
+
+2. Fill in the Set Password form with a password.
+
+3. Click ON next to Temporary to prevent having to update password on first login.
+

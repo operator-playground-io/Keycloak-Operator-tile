@@ -18,3 +18,7 @@ First step is to register this application with your Keycloak instance. To do th
   Root URL: https://www.keycloak.org/app/
 
 4. Click Save
+
+5. Open https://www.keycloak.org/app/. Change Keycloak URL to the URL of your Keycloak instance. Click Save.
+
+6. Now you can click Sign in to authenticate to this application using the Keycloak server you started earlier.

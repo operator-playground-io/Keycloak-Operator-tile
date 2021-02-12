@@ -1,6 +1,6 @@
 ---
-title: Keycloak Instance Creation tutorial
-description: This tutorial explains how create Instances for your Keycloak Operator.
+title: Create Keycloak Realm using Keycloak Admin Console
+description: This tutorial explains how to create Keycloak Realm using Keycloak Admin Console
 ---
 
 

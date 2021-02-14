@@ -20,17 +20,18 @@
   "Deployment Namespace": "my-keycloak-operator"
 },
   "commands": [
+   
     {
+      "description": "Install Operator",
+      "exec": "kubectl create -f https://operatorhub.io/install/keycloak-operator.yaml"
+    },
+     {
       "description": "Create hostpath for postgresql PVs",
       "exec": "sudo mkdir -p /var/lib/pgsql/data && sudo chmod -R 777 /var/lib/pgsql/data" 
     },
     {
       "description": "Clone and Prepare ",
       "exec": "cd /home/student/projects && git clone https://github.com/operator-playground-io/keycloak-operator-yaml.git && cd keycloak-operator-yaml && kubectl create -f postgresqlpv.yaml"
-    },
-    {
-      "description": "Install Operator",
-      "exec": "kubectl create -f https://operatorhub.io/install/keycloak-operator.yaml"
     }
 
 ],

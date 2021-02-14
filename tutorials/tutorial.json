@@ -8,52 +8,52 @@
          "description":"how to verify that the Keycloak Operator installed properly in the namespace",
          "duration":"5 min",
          "tutorial_name":"operator-installation-verification-tutorial.md",
-         "title":"1: Keycloak Operator Installation Verification Tutorial"
+         "title":"1. Keycloak Operator Installation Verification Tutorial"        
       },
       {
          "description":"Learn how to Create Keycloak Cluster Instance",
          "duration":"15 min",
          "tutorial_name":"Keycloak-Instance.md",
-         "title":"2: Create Keycloak Cluster Instance"
+         "title":"2. Create Keycloak Cluster Instance"
       },
       
       {
          "description":"Learn how to access and login to Keycloak Admin Console",
          "duration":"10 min",
          "tutorial_name":"admin-console.md",
-         "title":"3: Login to Keycloak Admin Console"
+         "title":"3. Login to Keycloak Admin Console"
       },
       {
          "description":"This tutorial explains how to create Keycloak Realm using Keycloak Admin Console",
          "duration":"5 min",
          "tutorial_name":"create-realm.md",
-         "title":"4: Create Keycloak Realm using Keycloak Admin Console"
+         "title":"4. Create Keycloak Realm using Keycloak Admin Console"
       },
       
       {
          "description":"Learn how to create user using Keycloak Admin Console",
          "duration":"5 min",
          "tutorial_name":"create-user.md",
-         "title":"5: Create User using Keycloak Admin Console"
+         "title":"5. Create User using Keycloak Admin Console"
       },
       {
          "description":"Learn how to login to account console using Keycloak Admin Console",
          "duration":"5 min",
          "tutorial_name":"Login-account-console.md",
-         "title":"6: Login to account console using Keycloak Admin Console"
+         "title":"6. Login to account console using Keycloak Admin Console"
       },
       {
          "description":"Learn how to secure our first application using Keycloak Admin Console",
          "duration":"5 min",
          "tutorial_name":"secure-app.md",
-         "title":"7: Secure our first application using Keycloak Admin Console"
+         "title":"7. Secure our first application using Keycloak Admin Console"
       },
       
       {
          "description":"Steps to cleanup Operator",
          "duration":"5 min",
          "tutorial_name":"cleanup.md",
-         "title":"8: Cleanup Operator"
+         "title":"8. Cleanup Operator"
       }
       
    ],

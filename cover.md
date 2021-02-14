@@ -13,12 +13,17 @@ The operator can deploy and manage Keycloak instances on Kubernetes and OpenShif
 
 ### Operator's features are as follows:
 
-Install Keycloak to a namespace
-Import Keycloak Realms
-Import Keycloak Clients
-Import Keycloak Users
-Create scheduled backups of the database
-Install Extensions
+- Install Keycloak to a namespace
+
+- Import Keycloak Realms
+
+- Import Keycloak Clients
+
+- Import Keycloak Users
+
+- Create scheduled backups of the database
+
+- Install Extensions
 
 
 ### Objective of tutorial

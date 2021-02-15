@@ -3,6 +3,7 @@ title: Secure our first application using Keycloak Admin Console
 description: This tutorial explains how to secure our first application using Keycloak Admin Console
 ---
 
+
 ### Secure our first application
 
 

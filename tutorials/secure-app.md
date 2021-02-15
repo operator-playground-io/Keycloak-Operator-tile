@@ -3,7 +3,9 @@ title: Secure our first application using Keycloak Admin Console
 description: This tutorial explains how to secure our first application using Keycloak Admin Console
 ---
 
-Let’s try to secure our first application. 
+### Secure our first application
+
+
 First step is to register this application with your Keycloak instance. To do this follow below steps:
 
 

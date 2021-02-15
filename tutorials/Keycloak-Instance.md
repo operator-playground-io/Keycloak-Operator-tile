@@ -126,7 +126,7 @@ EOF
 - Execute below command to create Keycloak NodePort Service:
 
 ```execute
-kubectl create -f nodeportsvc.yaml -n my-keycloak-operator
+kubectl create -f keycloaknodeportsvc.yaml -n my-keycloak-operator
 ```
 
 Output:

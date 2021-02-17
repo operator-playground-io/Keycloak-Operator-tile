@@ -21,8 +21,10 @@ Steps:
 4. Fill in the form with the following values:
 
    Username: myuser
-   First Name: Your first name
-   Last Name: Your last name
+   
+   First Name: John
+   
+   Last Name: Rodger
 
 5. Click Save
 

@@ -166,15 +166,15 @@ Output:
 credential-example-keycloak
 ```
 
-Next, you need to view the username and password:
+Next, you need to know the username and password.
+
+Execute below command to get Admin Username and Admin Password:
 
 ```execute
-ADMIN_USERNAME=kubectl get secrets credential-example-keycloak -n my-keycloak-operator --template='{{.data.ADMIN_USERNAME | base64decode }}' &&
-echo "" &&
-ADMIN_PASSWORD=kubectl get secrets credential-example-keycloak -n my-keycloak-operator --template='{{.data.ADMIN_PASSWORD | base64decode }}' &&
-echo "" &&
-echo "Admin Username:                 $ADMIN_USERNAME" &&
-echo "Admin Password:   $ADMIN_PASSWORD" 
+export ADMIN_USERNAME=$(kubectl get secrets credential-example-keycloak -n my-keycloak-operator --template='{{.data.ADMIN_USERNAME | base64decode }}') 
+export ADMIN_PASSWORD=$(kubectl get secrets credential-example-keycloak -n my-keycloak-operator --template='{{.data.ADMIN_PASSWORD | base64decode }}') 
+echo "Admin Username:$ADMIN_USERNAME" 
+echo "Admin Password: $ADMIN_PASSWORD"
 ```
 
 

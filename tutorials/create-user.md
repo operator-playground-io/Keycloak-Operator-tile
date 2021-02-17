@@ -12,11 +12,16 @@ Follow below steps to create Users using Keycloak admin console:
 
 Steps:
 
-1. Open the Keycloak Admin Console
+1. Open the Keycloak Admin Console.
 
-2. Click Users (left-hand menu)
+2. Click Users (left-hand menu).
 
-3. Click Add user (top-right corner of table)
+ ![](_images/users-option.png)
+
+3. Click Add user (top-right corner of table).
+
+ ![](_images/add-user.png)
+ 
 
 4. Fill in the form with the following values:
 
@@ -26,14 +31,25 @@ Steps:
    
    Last Name: Rodger
 
-5. Click Save
+5. Click Save.
+
+ ![](_images/add-user-form.png)
 
 
 The user will need an initial password set to be able to login. To do this:
 
 1. Click Credentials (top of the page).
 
+ ![](_images/user-creds.png)
+
 2. Fill in the Set Password form with a password.
+
+ ![](_images/enter-user-password.png)
 
 3. Click ON next to Temporary to prevent having to update password on first login.
 
+![](_images/On-option.png)
+
+4. You will see the similar to the below snapshot on console:
+
+ ![](_images/set-password.png)

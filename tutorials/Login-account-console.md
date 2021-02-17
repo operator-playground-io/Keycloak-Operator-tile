@@ -9,8 +9,14 @@ Let’s now try to login to the account console to verify the user is configured
 
 Steps:
 
-1. Open the Keycloak Account Console
+1. Open the Keycloak Account Console using URL : https://##DNS.ip##:30524/auth/realms/myrealm/account/
 
-2. Login with myuser and the password you created earlier
+You will see similar to this login page:
+
+ ![](_images/account-console.png)
+
+2. Login with myuser and the password you created earlier.
+
+![](_images/account-console.png)
 
 3. You should now be logged-in to the account console where users can manage their accounts.

@@ -48,7 +48,7 @@ The user will need an initial password set to be able to login. To do this:
 
 3. Click ON next to Temporary to prevent having to update password on first login.
 
-![](_images/On-option.png)
+![](_images/ON-option.png)
 
 4. You will see the similar to the below snapshot on console:
 

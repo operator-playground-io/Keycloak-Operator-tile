@@ -22,8 +22,10 @@ Please follow following Steps to create Keycloak Realm using Keycloak Admin Cons
 
    Name: myrealm
    
-   ![](_images/realm-config.png)
+   ![](_images/add-realm-form.png)
    
 4. Click on Create.
 
-  ![](_images/create.png)
+5. You will see Realm with name myrealm created as follows:
+   
+   ![](_images/myrealm-created.png)

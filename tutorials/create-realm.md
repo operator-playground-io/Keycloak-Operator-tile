@@ -3,7 +3,6 @@ title: Create Keycloak Realm using Keycloak Admin Console
 description: This tutorial explains how to create Keycloak Realm using Keycloak Admin Console
 ---
 
-
 ### Create a realm
 
  Realm in Keycloak is the equivalent of a tenant. It allows creating isolated groups of applications and users. 

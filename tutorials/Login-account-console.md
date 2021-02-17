@@ -11,12 +11,12 @@ Steps:
 
 1. Open the Keycloak Account Console using URL : https://##DNS.ip##:30524/auth/realms/myrealm/account/
 
-You will see similar to this login page:
+   You will see similar to this login page:
 
- ![](_images/account-console.png)
+  ![](_images/account-console.png)
 
 2. Login with myuser and the password you created earlier.
 
-![](_images/account-console.png)
+  ![](_images/account-console.png)
 
 3. You should now be logged-in to the account console where users can manage their accounts.

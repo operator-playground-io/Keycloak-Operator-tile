@@ -15,8 +15,10 @@ Steps:
 
   ![](_images/account-console.png)
 
-2. Login with myuser and the password you created earlier.
+2. Login with myuser and the password you created earlier.You will see following on console:
 
-  ![](_images/account-console.png)
+  ![](_images/account-console-logged-in-page.png)
 
 3. You should now be logged-in to the account console where users can manage their accounts.
+
+   This will verify that the user is configured correctly.

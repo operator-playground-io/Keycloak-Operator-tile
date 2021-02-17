@@ -44,8 +44,8 @@ First step is to register this application with your Keycloak instance. To do th
 
   ![](_images/account-console-signin.png)
 
-You will see a welcome message for the logged-in user on console.
+  You will see a welcome message for the logged-in user on console.
 
- ![](_images/login-application.png)
+  ![](_images/login-application.png)
 
 

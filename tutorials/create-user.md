@@ -46,7 +46,7 @@ The user will need an initial password set to be able to login. To do this:
 
  ![](_images/enter-user-password.png)
 
-3. Click ON next to Temporary to prevent having to update password on first login.
+3. Click on "ON" option next to "Temporary" which will make it "OFF" to prevent having to update password on first login.
 
 ![](_images/ON-option.png)
 

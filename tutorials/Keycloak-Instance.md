@@ -156,7 +156,7 @@ Before logging into the Admin Console, you need to check what is the Admin Usern
 Execute below command to get the Credentials Secret:
 
 ```execute
-kubectl get keycloak example-keycloak --output="jsonpath={.status.credentialSecret}"
+kubectl get keycloak example-keycloak -n my-keycloak-operator --output="jsonpath={.status.credentialSecret}"
 ```
 
 

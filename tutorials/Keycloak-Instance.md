@@ -145,7 +145,7 @@ If we don’t have the Ingress addon enabled,we can access Keycloak using NodePo
 
 You will see Keycloak Login console as below :
 
-![](_images/console.png)
+![](_images/login-page.png)
 
 
 ### Login to the Keycloak admin console

@@ -24,7 +24,7 @@ First step is to register this application with your Keycloak instance. To do th
 
 4. Click Save.
 
-5. Open https://www.keycloak.org/app/. Change Keycloak URL to the URL of your Keycloak instance : https://##DNS.IP###:30524/auth/.
+5. Open https://www.keycloak.org/app/. Change Keycloak URL to the URL of your Keycloak instance : https://##DNS.ip##:30524/auth/.
 
 6. Click Save.
 

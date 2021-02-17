@@ -1,6 +1,12 @@
+---
+title: Login to the Keycloak admin console
+description: This tutorial explains how create login to the Keycloak admin console
+---
+
 ### Login to the Keycloak admin console
 
-Before logging into the Admin Console, you need to check what is the Admin Username and Password. The credentials are stored inside the following Secret:
+
+Step 1: Before logging into the Admin Console, you need to check what is the Admin Username and Password. The credentials are stored inside the following Secret:
 
 
 Execute below command to get the Credentials Secret:
@@ -29,3 +35,8 @@ echo "Admin Password: $ADMIN_PASSWORD"
 
 
 Step 3: Navigate to Keycloak URL using your browser and use Admin Username and Admin Password obtained in previous steps to login in keycloak Admin console.
+
+Please refer below snapshot:
+
+
+![](_images/login-using-creds.png)

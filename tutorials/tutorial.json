@@ -48,12 +48,17 @@
          "tutorial_name":"secure-app.md",
          "title":"7. Secure our first application using Keycloak Admin Console"
       },
-      
+      {
+         "description":"Sample application using Keycloak",
+         "duration":"5 min",
+         "tutorial_name":"application-tutorial.md",
+         "title":"8. Keycloak Sample Application"
+      },
       {
          "description":"Steps to cleanup Operator",
          "duration":"5 min",
          "tutorial_name":"cleanup.md",
-         "title":"8. Cleanup Operator"
+         "title":"9. Cleanup Operator"
       }
       
    ],

@@ -34,7 +34,7 @@ First step is to register this application with your Keycloak instance. To do th
  
    ![](_images/account-console-new.png)
    
-6. Change Keycloak URL to the URL of your Keycloak instance : https://##DNS.ip##:30524/auth/.
+6. Change Keycloak URL to the URL of your Keycloak instance : https://##DNS.ip##:30524/auth/
 
     ![](_images/account-console-url-add.png)
 

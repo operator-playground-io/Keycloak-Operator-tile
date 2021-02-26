@@ -55,3 +55,5 @@ The user will need an initial password set to be able to login. To do this:
 5. You will see similar to the below snapshot on console:
 
  ![](_images/set-password.png)
+ 
+  Please provide your confirmation by clicking on "Set Password" again.

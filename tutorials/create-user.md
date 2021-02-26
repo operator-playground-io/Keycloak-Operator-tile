@@ -50,6 +50,8 @@ The user will need an initial password set to be able to login. To do this:
 
 ![](_images/ON-option.png)
 
-4. You will see the similar to the below snapshot on console:
+4. Click on "Set Password".
+
+5. You will see similar to the below snapshot on console:
 
  ![](_images/set-password.png)

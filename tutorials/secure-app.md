@@ -12,7 +12,7 @@ First step is to register this application with your Keycloak instance. To do th
 
 1. Open the Keycloak Admin Console.
 
-2. Click on 'Clients'.
+2. Click on 'Clients' and then click on the option "Create" as shown in below snapshot.
 
    ![](_images/create-client.png)
 

@@ -15,7 +15,7 @@ Steps:
 
   ![](_images/account-console.png)
 
-2. Login with myuser and the password you created earlier.You will see following on console:
+2. Login with username: `myuser` and the password you created earlier.You will see following on console:
 
   ![](_images/account-console-logged-in-page.png)
 

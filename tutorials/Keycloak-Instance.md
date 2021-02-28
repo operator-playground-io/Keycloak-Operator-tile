@@ -1,18 +1,19 @@
 ---
-title: Keycloak Instance Creation tutorial
-description: This tutorial explains how create Instances for your Keycloak Operator.
+title: Keycloak Instance Creation
+description: Learn how to create Instance of your Keycloak Operator.
 ---
 
 ### Create Keycloak Instance 
+
 The Keycloak custom resource YAML file contains three properties:
 
 instances - controls the number of instances running in high availability mode.
 
-externalAccess - if the enabled is True, the Operator creates a route for OpenShift or an Ingress for Kubernetes for the Keycloak cluster.
+externalAccess - if the enabled is `true`, the Operator creates a route for OpenShift or an Ingress for Kubernetes for the Keycloak cluster.
 
 externalDatabase - applies only if you want to connect an externally hosted database. 
 
-### Create below yaml to create CR for Keycloak Instance
+**Step 1: Create the below YAML File for Custom Resource of Keycloak Instance.**
 
 ```execute
 cat <<'EOF' > keycloakInstance.yaml
@@ -33,7 +34,7 @@ EOF
 ```
 
 
-Execute below command to create Keycloak instance:
+**Step 2: Now Create the Instance of Keycloak Operator.**
 
 ```execute
 kubectl create -f keycloakInstance.yaml -n my-keycloak-operator

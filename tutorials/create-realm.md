@@ -1,19 +1,25 @@
 ---
-title: Create Keycloak Realm using Keycloak Admin Console
-description: This tutorial explains how to create Keycloak Realm using Keycloak Admin Console
+title: Keycloak Realm Creation
+description: Learn how to create a Keycloak realm using Keycloak Admin console?
 ---
 
-### Create a realm
 
- Realm in Keycloak is the equivalent of a tenant. It allows creating isolated groups of applications and users. 
- By default there is a single realm in Keycloak called master. 
- This is dedicated to manage Keycloak and should not be used for your own applications.
+### What is a Realm?
+ A realm in Keycloak is the equivalent of a tenant. The functionalities of a realm include the following: 
+-	It allows you to create isolated groups of users and applications.
+-	The default realm called master manages the Keycloak, but is not recommended for a user’s own applications.
 
-Please follow following Steps to create Keycloak Realm using Keycloak Admin Console :
 
-1. Open the Keycloak Admin Console.
+### Create a Keycloak Realm.
 
-2. Hover the mouse over the dropdown in the top-left corner where it says Master, then click on Add realm.Please refer following snapshot:
+Follow the steps below to create a Keycloak realm using Admin console.
+
+
+**Step 1: Open the Keycloak Admin Console.**
+
+**Step 2: Select the ‘master’ option from the dropdown by hovering the mouse on the menu.**
+Step 3: Click on `Add realm` option. See the snapshot below.
+
 
   ![](_images/add-realm.png)
 

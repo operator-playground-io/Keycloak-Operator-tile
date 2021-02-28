@@ -1,24 +1,31 @@
 ---
-title: Login to account console using Keycloak Admin Console
-description: This tutorial explains how to login to account console using Keycloak Admin Console
+title: Logging in to Account Console using Keycloak Admin Console
+description: Learn how to Logging in to Account Console using Keycloak Admin Console
 ---
 
-### Login to account console
+### Logging in to Account Console
 
-Let’s now try to login to the account console to verify the user is configured correctly.
+Let’s now try to sign in the account console via Keycloak Admin Console to and verify if the user has been configured correctly.
 
-Steps:
+**Step 1: Open the Keycloak Account Console using URL below.
 
-1. Open the Keycloak Account Console using URL : https://##DNS.ip##:30524/auth/realms/myrealm/account/
+https://##DNS.ip##:30524/auth/realms/myrealm/account/ 
 
-   You will see similar to this login page:
+You should see a login page like below.
 
-  ![](_images/account-console.png)
+![](_images/account-console.png)
 
-2. Login with username: `myuser` and the password you created earlier.You will see following on console:
+**Step 2: Login with username `myuser` and the password you created earlier.**
+
+This should further display as below.
 
   ![](_images/account-console-logged-in-page.png)
 
-3. You should now be logged-in to the account console where users can manage their accounts.
+You should now be logged-in to the account console where users can manage their accounts.
 
-   This will verify that the user is configured correctly.
+After successful access to the account console, you can check that the user is configured correctly.
+
+
+### Conclusion
+
+Now we have verified that the user has been configured correctly.

@@ -34,3 +34,6 @@ description: Learn how to clean up Keycloak Operator and its resources.
   rm -rf KeycloakInstance.yaml
   ```
   
+### Conclusion
+
+You’ve successfully cleaned up Keycloak Operator and its resources.

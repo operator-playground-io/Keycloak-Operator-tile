@@ -34,28 +34,28 @@ EOF
 ```
 
 
-**Step 2: Now Create the Instance of Keycloak Operator.**
+**Step 2: Now execute below command to create a Keycloak instance.**
 
 ```execute
 kubectl create -f keycloakInstance.yaml -n my-keycloak-operator
 ```
 
-You will see the following resources created:
+You should see the following resources being created.
 
 ```
 keycloak.keycloak.org/example-keycloak created
 ```
 
-This will start Keycloak on Kubernetes. It will also create an initial admin user with username and password.
+Once it is successful, Keycloak will get started on Kubernetes.  This will also initially create an `admin` user with associated username and password.
 
 
-Check the Pods status:
+**Step 3: Check the pods’ status.**
 
 ```execute
 kubectl get pods -n my-keycloak-operator
 ```
 
-You will see similar to this output:
+You will see an output like the below.
 
 ```
 NAME                                       READY   STATUS    RESTARTS   AGE
@@ -64,17 +64,17 @@ pod/keycloak-operator-668cc5dc75-sdpdd     1/1     Running   0          8m2s
 pod/keycloak-postgresql-85fcff4cdd-d485l   1/1     Running   5          5m12s
 ```
 
-Please wait till Pod STATUS will be "Running" and then proceed further.
+Please wait until pod STATUS is "Running", then proceed.
 
 
-Check all the kubernetes resources:
+**Step 4: Check the progress of create process for all the Kubernetes resources.**
 
 ```execute
 kubectl get all -n my-keycloak-operator
 ```
 
 
-You will see similar to this output:
+You will see an output like the below.
 
 ```
 NAME                                       READY   STATUS    RESTARTS   AGE
@@ -101,8 +101,15 @@ statefulset.apps/keycloak   1/1     5m12s
 ```
 
 
-- Create below yaml for NodePort service to access Keycloak Admin Console:
 
+### Access Keycloak Admin Console
+
+In this case Keycloak Operator creates an Ingress for Kubernetes for the Keycloak cluster.
+
+In case the Ingress add-on is not enabled, Keycloak console can be accessed using NodePort Service. 
+
+
+**Step 1: First, create the yaml definition for `NodePort` Service to access Keycloak Admin Console as below.**
 
 ```execute
 cat <<'EOF' > keycloaknodeportsvc.yaml
@@ -124,27 +131,23 @@ spec:
 EOF
 ```
 
-- Execute below command to create Keycloak NodePort Service:
+**Step 2: Execute the command below to create Keycloak `NodePort` Service.**
 
 ```execute
 kubectl create -f keycloaknodeportsvc.yaml -n my-keycloak-operator
 ```
 
-Output:
+You will see an output like the below.
 
 ```
 service/keycloak-svc created
 ```
 
-### Access Keycloak Admin Console
+Keycloak console can be accessed using NodePort Service via URL as below:
 
-In this case Keycloak Operator creates an Ingress for Kubernetes for the Keycloak cluster.
+https://##DNS.ip##:30524/auth/admin 
 
-If we don’t have the Ingress addon enabled,we can access Keycloak using NodePort from the following URL:
-
-<a href="https://##DNS.ip##:30524/auth/admin" target="_blank">https://##DNS.ip##:30524/auth/admin</a> 
-
-You will see Keycloak Login console as below :
+Once you are logged in, you should be able to see a Keycloak console as shown below
 
 ![](_images/login-page.png)
 

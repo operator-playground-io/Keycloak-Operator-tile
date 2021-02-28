@@ -1,16 +1,14 @@
 ---
-title: Keycloak Operator cleanup Tutorial
-description: This tutorial explains how to cleanup Operator
+title: Keycloak Operator cleanup 
+description: Learn how to clean up Keycloak Operator and its resources.
 ---
 
 
 ### Cleaning Up Operator
 
 
+**Step 1: Delete the operator's Custom Resources by using `kubectl delete` commands as below.**
 
-***Delete the operator's custom resource by kubectl delete commands :***
-
-Example:
  
  ```execute
  kubectl delete -f KeycloakInstance.yaml
@@ -18,10 +16,9 @@ Example:
 
 
 
-***Delete the operator by kubectl delete command:***
+**Step 2: Delete the operator by using `kubectl delete` command as below.**
  
  
- Example:
  
  ```execute
  kubectl delete -f https://operatorhub.io/install/keycloak-operator.yaml
@@ -29,9 +26,9 @@ Example:
  
 
  
-***Delete all the yaml files:***
+**Step 3: Delete all the yaml files.**
  
- Example:
+
  
   ```execute
   rm -rf KeycloakInstance.yaml

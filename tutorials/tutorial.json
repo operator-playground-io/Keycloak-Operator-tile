@@ -49,16 +49,10 @@
          "title":"7. Secure our first application using Keycloak Admin Console"
       },
       {
-         "description":"Learn how to use an Keycloak cluster to add authentication to applications and secure services.",
-         "duration":"5 min",
-         "tutorial_name":"secure-sample-application.md",
-         "title":"8. Secure Sample Application using keycloak."
-      },
-      {
          "description":"Steps to cleanup Operator",
          "duration":"5 min",
          "tutorial_name":"cleanup.md",
-         "title":"9. Cleanup Operator"
+         "title":"8. Cleanup Operator"
       }
       
    ],

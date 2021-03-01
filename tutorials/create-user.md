@@ -1,59 +1,56 @@
 ---
-title: Create User Tutorial using Keycloak Admin Console
-description: This tutorial explains how to create user using Keycloak Admin Console
+title: User Creation using Keycloak Admin Console
+description: Learn how to create user using Keycloak Admin Console.
 ---
 
 
 ### Create a user
 
-Initially there are no users in a new realm, so let’s create one.
+Initially, there is no existing user in the new realm. Let’s create one using Keycloak admin console. To do so, follow the steps below.  
 
-Follow below steps to create Users using Keycloak admin console:
 
-Steps:
+**Step 1: Open the Keycloak Admin Console and click on Users menu.**
 
-1. Open the Keycloak Admin Console.
-
-2. Click Users (left-hand menu).
+Step 2: Click on ‘Add User’ on the top right corner.
 
  ![](_images/users-option.png)
 
-3. Click Add user (top-right corner of table).
+Step 3: Fill up the form with following field values:
+
+   Username: myuser
+   First Name: John
+   Last Name: Rodger
+
 
  ![](_images/add-user.png)
  
 
-4. Fill in the form with the following values:
-
-   Username: myuser
-   
-   First Name: John
-   
-   Last Name: Rodger
-
-5. Click Save.
+Step 4: Click on `Save`.
 
  ![](_images/add-user-form.png)
 
+### Create Password
 
-The user will need an initial password set to be able to login. To do this:
+After defining the user account details, you will need an initial password to be created. To do so,
 
-1. Click Credentials (top of the page).
+Step 1: Click on the Credentials.
 
  ![](_images/user-creds.png)
 
-2. Fill in the Set Password form with a password.
+Step 2: Enter the password in Set Password field. 
 
  ![](_images/enter-user-password.png)
 
-3. Click on "ON" option next to "Temporary" which will make it "OFF" to prevent having to update password on first login.
+3. Select "ON" next to "Temporary" which will make it "OFF" to prevent the user being prompted to update the password at first. login. 
 
 ![](_images/ON-option.png)
 
-4. Click on "Set Password".
-
-5. You will see similar to the below snapshot on console:
+You should see the details on console like below.
 
  ![](_images/set-password.png)
  
-  Please provide your confirmation by clicking on "Set Password" again.
+Please provide your confirmation by clicking on "Set Password" again.
+
+### Conclusion
+
+User with its username and password is created.

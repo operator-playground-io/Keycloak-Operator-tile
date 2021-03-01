@@ -3,6 +3,7 @@ title: Secure Sample Application using keycloak.
 description: Learn how to use an Keycloak cluster to add authentication to applications and secure services.
 ---
 
+
 ### Introduction
 
 The Sample application we have taken here is a Node.js application which is deployed as a microservice.

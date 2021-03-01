@@ -1,34 +1,45 @@
 ---
-title: Keycloak Operator Installation Verification Tutorial
-description: This tutorial explains how to verify that the Keycloak Operator installed properly in the namespace
+title: Keycloak Operator Installation Verification.
+description: Learn how to verify that the Keycloak Operator has been installed properly in the namespace.
 ---
 
 ### Check the Keycloak Operator
 
-After installation, verify that operator is installed successfully by executing the below command.
+**Step 1: Verify that the Keycloak Operator has been installed successfully by executing below command.**
 
 ```execute
 kubectl get csv -n my-keycloak-operator
 ```
 
-You should see a similar output as below.
+You will see a similar output as below.
 
 ```output
 NAME                        DISPLAY             VERSION   REPLACES                    PHASE
 keycloak-operator.v12.0.1   Keycloak Operator   12.0.1    keycloak-operator.v11.0.0   Succeeded
 ```
 
-**Please wait till `PHASE` status will be `Succeeded` and then proceed further.**
+It may take a few minutes. Please wait for the PHASE STATUS to be SUCCEEDED, then continue.
 
-After the installation is successful , you can check your operator's pod by executing the below command.
+**Step 2: Check the pod status.**
+
+Check the Operator’s pod by running the following command.
 
 ```execute
 kubectl get pods -n my-keycloak-operator
 ```
 
-You should see a pod starting with 'Keycloak-operator' with Ready value '1/1' and Status 'Running' like the output as below.
+From above, you can see the pod with:
+a.	NAME starting with 'Keycloak-operator'
+b.	READY value is '1/1'
+c.	STATUS is `Running`
+
 
 ```output
 NAME                                 READY   STATUS    RESTARTS   AGE
 keycloak-operator-668cc5dc75-krw9m   1/1     Running   0          92s
 ```
+
+
+### Conclusion
+
+The steps described above assist you in verifying the successful installation of Keycloak Operator.

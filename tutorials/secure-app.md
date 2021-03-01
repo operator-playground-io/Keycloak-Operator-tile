@@ -1,51 +1,60 @@
 ---
-title: Secure our first application using Keycloak Admin Console
-description: This tutorial explains how to secure our first application using Keycloak Admin Console
+title: Create Client and configure it 
+description: Learn how to create Client and configure it to register application with keycloak instance.
 ---
 
 
-### Secure our first application
+### Create Client and configure it 
 
 
-First step is to register this application with your Keycloak instance. To do this follow below steps:
+Register the Application with Keycloak Instance by following steps below.
 
 
-1. Open the Keycloak Admin Console.
+**Step 1: Open the Keycloak Admin Console.**
 
-2. Click on 'Clients' and then click on the option "Create" as shown in below snapshot.
+**Step 2: Click on 'Clients'.**
 
-   ![](_images/create-client.png)
+![](_images/create-client.png)
 
-3. Fill in the form with the following values:
+**Step 3: Fill up the form with the following values:**
 
-   Client ID: myclient
-  
+   **Client ID: myclient  
    Client Protocol: openid-connect
-  
-   Root URL: https://www.keycloak.org/app/
+   Root URL: https://www.keycloak.org/app/**
    
-   ![](_images/client-config.png)
+![](_images/client-config.png)
 
-4. Click Save.
+**Step 4: Click `Save`.**
 
-   ![](_images/client-config.png)
+ ![](_images/client-config.png)
+   
+   
+### Secure the Application
 
-5. Open https://www.keycloak.org/app/. You will see following on console:
+**Step 1: Open https://www.keycloak.org/app/.**
+
+You will see information following on console:
+
  
-   ![](_images/account-console-new.png)
+![](_images/account-console-new.png)
    
-6. Change Keycloak URL to the URL of your Keycloak instance : https://##DNS.ip##:30524/auth/
+**Step 2: Change Keycloak URL to the URL of your Keycloak instance, i.e.**
 
-    ![](_images/account-console-url-add.png)
+https://##DNS.ip##:30524/auth/
 
-7. Click Save.
+![](_images/account-console-url-add.png)
 
-8. Now you can click Sign in to authenticate to this application using the Keycloak server you started earlier.
+**Step 3: Click on Save.**
 
-  ![](_images/account-console-signin.png)
+**Step 4: Click on `Sign in` to authenticate to the application using the Keycloak server you started earlier.**
 
-  You will see a welcome message for the logged-in user on console.
+![](_images/account-console-signin.png)
 
-  ![](_images/login-application.png)
+After logging in, you will see a welcome message for the logged-in user on the console.
+
+![](_images/login-application.png)
 
 
+### Conclusion
+
+Now you have created Client and configure it to register the sample application with Keycloak Instance.

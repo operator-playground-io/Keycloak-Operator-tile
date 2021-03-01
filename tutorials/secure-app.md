@@ -48,9 +48,12 @@ https://##DNS.ip##:30524/auth/
 
 **Step 4: Click on `Sign in` to authenticate to the application using the Keycloak server you started earlier.**
 
+
 ![](_images/account-console-signin.png)
 
+
 After logging in, you will see a welcome message for the logged-in user on the console.
+
 
 ![](_images/login-application.png)
 

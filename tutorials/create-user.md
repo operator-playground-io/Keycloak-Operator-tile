@@ -11,37 +11,38 @@ Initially, there is no existing user in the new realm. Let’s create one using 
 
 **Step 1: Open the Keycloak Admin Console and click on Users menu.**
 
-Step 2: Click on ‘Add User’ on the top right corner.
+**Step 2: Click on ‘Add User’ on the top right corner.**
 
  ![](_images/users-option.png)
 
-Step 3: Fill up the form with following field values:
+**Step 3: Fill up the form with following field values:
 
-   Username: myuser
-   First Name: John
-   Last Name: Rodger
+   **Username: myuser
+    First Name: John
+    Last Name: Rodger**
 
 
  ![](_images/add-user.png)
  
 
-Step 4: Click on `Save`.
+**Step 4: Click on `Save`.**
 
  ![](_images/add-user-form.png)
+
 
 ### Create Password
 
 After defining the user account details, you will need an initial password to be created. To do so,
 
-Step 1: Click on the Credentials.
+**Step 1: Click on the Credentials.**
 
  ![](_images/user-creds.png)
 
-Step 2: Enter the password in Set Password field. 
+**Step 2: Enter the password in Set Password field.**
 
  ![](_images/enter-user-password.png)
 
-3. Select "ON" next to "Temporary" which will make it "OFF" to prevent the user being prompted to update the password at first. login. 
+**Step 3: Select "ON" next to "Temporary" which will make it "OFF" to prevent the user being prompted to update the password at first login.**
 
 ![](_images/ON-option.png)
 

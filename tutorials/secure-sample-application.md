@@ -1,16 +1,16 @@
 ---
-title: Keycloak Operator Sample Application Tutorial
-description: This tutorial explains how to use an Keycloak cluster created by the operator in an application.
+title: Secure Sample Application using keycloak.
+description: Learn how to use an Keycloak cluster to add authentication to applications and secure services.
 ---
 
 ### Introduction
 
-Sample application is a Node.js application which is deployed as a microservice.
+The Sample application we have taken here is a Node.js application which is deployed as a microservice.
 The example also uses Skaffold which handles the workflow for building, pushing and deploying your application, allowing you to focus on what matters most: writing code.
 
 ### Code Structure
 
-![codestructure](_images/keycloak-sample-app-structure..png)
+![codestructure](_images/keycloak-sample-app-structure.png)
 
 It follows a simple modular and MVC pattern. There are 2 folders that are of our interest:
 - k8s :  This contains all the deployment and service yaml for the application. This defines the deployment and exposure of our application.
@@ -30,7 +30,7 @@ Perform the following steps described in the tutorials.
 - Create an user. You will need the user name and password to log in into the application.
 - Create a client with name 'vanilla'.
 
-**Step 2:** Install the application sample
+**Step 2:** Install the application sample.
 
 Get sample code:
 ```execute

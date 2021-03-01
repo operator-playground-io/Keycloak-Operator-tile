@@ -18,19 +18,23 @@ Follow the steps below to create a Keycloak realm using Admin console.
 **Step 1: Open the Keycloak Admin Console.**
 
 **Step 2: Select the ‘master’ option from the dropdown by hovering the mouse on the menu.**
-Step 3: Click on `Add realm` option. See the snapshot below.
+**Step 3: Click on `Add realm` option. See the snapshot below.**
 
 
   ![](_images/add-realm.png)
 
-3. Fill in the form with the following values:
+**Step 3: Fill in the form with the following values:
 
    Name: myrealm
    
    ![](_images/add-realm-form.png)
    
-4. Click on Create.
+**Step 4: Fill in the form with the Name value as `myrealm`.**
 
-5. You will see Realm with name myrealm created as follows:
+**Step 5: Click on ‘Create’.**
    
-   ![](_images/myrealm-created.png)
+![](_images/myrealm-created.png)
+
+
+### Conclusion
+You should be able to see the ‘myrealm’ Realm as shown above.

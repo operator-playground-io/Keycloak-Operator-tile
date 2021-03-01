@@ -147,9 +147,11 @@ Keycloak console can be accessed using NodePort Service via URL as below:
 
 https://##DNS.ip##:30524/auth/admin 
 
-Once you are logged in, you should be able to see a Keycloak console as shown below
+You should be able to see a Keycloak login console as shown below
 
 ![](_images/login-page.png)
 
 
+### Conclusion
 
+We have created Keycloak Instance and able to access Keycloak login console. In further section, we will discuss the process of logging in to Keycloak admin Console as admin user.

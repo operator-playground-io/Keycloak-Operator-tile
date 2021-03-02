@@ -43,10 +43,10 @@
          "title":"6. Login to account console using Keycloak Admin Console"
       },
       {
-         "description":"Learn how to secure our first application using Keycloak Admin Console",
+         "description":"Learn how to create Client and configure it to register application with keycloak instance.",
          "duration":"5 min",
          "tutorial_name":"secure-app.md",
-         "title":"7. Secure our first application using Keycloak Admin Console"
+         "title":"7. Create Client and configure it."
       },
       {
          "description":"Steps to cleanup Operator",

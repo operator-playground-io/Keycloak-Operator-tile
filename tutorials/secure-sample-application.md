@@ -27,7 +27,7 @@ The code stucture follows a simple modular and MVC pattern. There are 2 folders 
 	- Login to Keycloak Admin Console.
 	- Create a realm with name 'myrealm'.
 	- Create an a user. You will need the user name and password to log in into the application.
-	- Create a client with name 'vanilla'.
+	- Create a client with name 'vanilla'. Use the following URL: http://##DNS.ip##:30300
 
 Once you complete the above steps, proceed with following steps to execute the sample application.
 

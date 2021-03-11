@@ -13,10 +13,10 @@ The sample application we have considered here is a React application. The appli
 ![codestructure](_images/keycloak-react-app-structure.png)
 
 The code stucture follows a simple modular and MVC pattern. There are 3 folders that are of our interest:
+
 	- k8s : This folder contains all the deployment and service yaml files for the application. This defines the deployment and exposure of our application.
 	- k8s_keycloak : This folder contains all the deployment and service yaml files for creating an a Keycloak cluster if you need, for example to run the application locally.
 	- src : the sources for React application are in this folder
-
 
 
 ### Try the example
@@ -27,8 +27,8 @@ The code stucture follows a simple modular and MVC pattern. There are 3 folders 
 	- Create an Keycloak cluster.
 	- Login to Keycloak Admin Console.
 	- Create a realm with name 'myrealm'.
-	- Create an a user. You will need the user name and password to log in into the application.
 	- Create a client with name 'vanilla'. Use the following URL: http://##DNS.ip##:30400
+	- Create an user. You will need the user name and password to log in into the application.	
 
 Once you complete the above steps, proceed with following steps to execute the sample application.
 

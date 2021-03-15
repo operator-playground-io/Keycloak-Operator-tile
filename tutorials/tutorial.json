@@ -57,7 +57,7 @@
       {
          "description":"Learn how to use a Keycloak cluster to add authentication to a Node.js applications and secure the services.",
          "duration":"5 min",
-         "tutorial_name":"secure-sample-application.md",
+         "tutorial_name":"secure-node-application.md",
          "title":"9. Secure a Node.js Application using Keycloak.."
       },
       {

@@ -23,12 +23,20 @@ The code stucture follows a simple modular and MVC pattern. There are 3 folders 
 
 **Step 1: Perform the following steps described in the tutorials.**
 
-	- Install the Keycloak operator.
-	- Create an Keycloak cluster.
-	- Login to Keycloak Admin Console.
-	- Create a realm with name 'myrealm'.
-	- Create a client with name 'vanilla'. Use the following URL: http://##DNS.ip##:30400
-	- Create an user. You will need the user name and password to log in into the application.	
+*  Install the Keycloak operator.
+
+*  Create an Keycloak cluster.
+
+*  Login to Keycloak Admin Console.
+
+*  Create a realm with name 'myrealm'.
+
+*  Create a client with name 'vanilla'. Use the following URL: http://##DNS.ip##:30400
+
+*  Optional: Create 'app-user' role if does not exist. Click on Roles, click on Add role button. Enter 'app-user' as the name of the new role.
+
+*  Create an user. You will need the user name and password to log in into the application. If you have created 'app-user' role, assign it to the new user. To do this click on 'Role mappings', select 'app-user' role from the list of available roles and click on 'Add selected'.
+
 
 Once you complete the above steps, proceed with following steps to execute the sample application.
 

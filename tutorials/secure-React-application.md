@@ -41,7 +41,7 @@ The code stucture follows a simple modular and MVC pattern. There are 3 folders 
 Once you complete the above steps, proceed with following steps to execute the sample application.
 
 
-**Step 2: Install the sample application.
+**Step 2: Install the sample application.**
 
 - Get the sample code.
 

@@ -1,63 +1,66 @@
 ---
 title: Create Client and configure it 
-description: Learn how to create Client and configure it to register application with keycloak instance.
+description: Learn how to create Client and configure it.
 ---
 
 
 ### Create Client and configure it 
 
 
-Register the Application with Keycloak Instance by following steps below.
+Create Client and configure it by following steps below.
 
 
 **Step 1: Open the Keycloak Admin Console.**
 
-**Step 2: Click on 'Clients'.**
+**Step 2: Click on 'Clients' and then on `Create`**
 
 ![](_images/create-client.png)
 
 **Step 3: Fill up the form with the following values:**
 
-   **Client ID: myclient  
-   Client Protocol: openid-connect
-   Root URL: https://www.keycloak.org/app/**
+   Client ID: vanilla  
    
-![](_images/client-config.png)
+   Client Protocol: openid-connect
+   
+   Root URL: http://##DNS.ip##:30300
+   
+![](_images/client-form.png)
 
 **Step 4: Click `Save`.**
 
- ![](_images/client-config.png)
+You will see Client `Settings` information like below: 
+
+![](_images/client-setting-page.png)
+    
    
-   
-### Secure the Application
+### Define Client Roles
 
-**Step 1: Open https://www.keycloak.org/app/.**
+Imagine the Application that you are building, have different types of users with different user permissions. Ex: users and administrators.
 
-You will see information following on console:
+- Some APIs would only be accessible to `users` only.
 
+- Some APIs would be accessible to `administrators` only.
+
+- Some APIs would be accessible to both `users` and `administrators`.
+
+**Step 1: Go to Client `Roles` tab. Click on `Add-Role` to create the Client Role definitions.**
+
+You will see following on console:
  
-![](_images/account-console-new.png)
+![](_images/add-role-to-client.png)
    
-**Step 2: Change Keycloak URL to the URL of your Keycloak instance, i.e.**
+**Step 2: Let’s create two roles: user and admin by clicking Add Role button.**
 
-https://##DNS.ip##:30524/auth/
+- Provide the Role Name: user. Click on `Save`
 
-![](_images/account-console-url-add.png)
+![](_images/add-role-user.png)
 
-**Step 3: Click on Save.**
+- Provide the other Role Name: admin. Click on `Save`
 
-**Step 4: Click on `Sign in` to authenticate to the application using the Keycloak server you started earlier.**
+![](_images/add-role-admin.png)
 
-
-![](_images/account-console-signin.png)
-
-
-After logging in, you will see a welcome message for the logged-in user on the console.
-
-
-![](_images/login-application.png)
 
 
 ### Conclusion
 
-Now you have created Client and configure it to register the sample application with Keycloak Instance.
+Now you have created Client and configure it.

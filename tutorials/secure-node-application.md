@@ -33,9 +33,13 @@ The code stucture follows a simple modular and MVC pattern. There are 2 folders 
 
 *  Create a client with name 'vanilla'. Use the following URL: http://##DNS.ip##:30300. Click on Roles tab and add 'user' and 'admin' roles.
 
-*  Create a regular user. You will need the user name and password to log in into the application. Assign 'user' role to the new user. To do this click on 'Role mappings', select 'vanilla' from Client roles drop-down, select 'user' and click on 'Add selected'.
-
-*  Create an admin user. You will need the user name and password to log in into the application. Assign 'admin' role to the new user. To do this click on 'Role mappings', select 'vanilla' from Client roles drop-down, select 'admin' and click on 'Add selected'.
+*  Create a regular user. You will need the user name and password to log in into the application. 
+*  Assign 'user' role to the new user. 
+   Note: Please refer "Define Client Role" section of "Create Client and configure it" Tutorial and "Create Realm Roles" tutorial.
+     
+*  Create an admin user. You will need the user name and password to log in into the application. 
+*  Assign 'admin' role to the new user.
+   Note: Please refer "Define Client Role" section of "Create Client and configure it" Tutorial and "Create Realm Roles" tutorial.
 
 Once you complete the above steps, proceed with following steps to execute the sample application.
 

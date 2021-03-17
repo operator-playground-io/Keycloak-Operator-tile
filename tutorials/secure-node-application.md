@@ -6,7 +6,8 @@ description: Learn how to use a Keycloak cluster to add authentication to an app
 
 ### Introduction
 
-The sample application we have considered here is a Node.js application which is deployed as a microservice. The example also uses Skaffold tool which handles the workflow for building, pushing and deploying an application, allowing the developer to focus on writing the code.
+The sample application we have considered here is a Node.js application which is deployed as a microservice. Any unauthenticated user will be able to access the Home page. The regular users will be able to access only the 'Posts' page and the administrators will be able to access both the 'Posts' and the 'Users' pages.
+The example also uses Skaffold tool which handles the workflow for building, pushing and deploying an application, allowing the developer to focus on writing the code.
 
 ### Code Structure
 
@@ -30,12 +31,11 @@ The code stucture follows a simple modular and MVC pattern. There are 2 folders 
 
 *  Create a realm with name 'myrealm'.
 
-*  Create a client with name 'vanilla'. Use the following URL: http://##DNS.ip##:30300
+*  Create a client with name 'vanilla'. Use the following URL: http://##DNS.ip##:30300. Click on Roles tab and add 'user' and 'admin' roles.
 
-*  Create 'app-user' role if does not exist. Click on Roles, click on Add role button. Enter 'app-user' as the name of the new role.
+*  Create a regular user. You will need the user name and password to log in into the application. Assign 'user' role to the new user. To do this click on 'Role mappings', select 'vanilla' from Client roles drop-down, select 'user' and click on 'Add selected'.
 
-*  Create an user. You will need the user name and password to log in into the application. Assign 'app-user' role to the new user. To do this click on 'Role mappings', select 'app-user' role from the list of available roles and click on 'Add selected'.
-
+*  Create an admin user. You will need the user name and password to log in into the application. Assign 'admin' role to the new user. To do this click on 'Role mappings', select 'vanilla' from Client roles drop-down, select 'admin' and click on 'Add selected'.
 
 Once you complete the above steps, proceed with following steps to execute the sample application.
 

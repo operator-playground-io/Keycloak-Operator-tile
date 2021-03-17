@@ -24,7 +24,7 @@ Initially, there is no existing user in the new realm. Let’s create one using 
     Last Name: Rodger
 
 
- ![](_images/add-user.PNG)
+ ![](_images/add-user.png)
  
 
 **Step 4: Click on `Save`.**

@@ -27,7 +27,7 @@ This configuration will assign `vanilla` client role : `user` to the `app-user` 
 
 Step 4. Follow the same steps to create the `app-admin` realm role and assign `vanilla` client role : `admin` to it.
 
-  ![](_images/app-admin.png)
+  ![](_images/app-admin.PNG)
    
    
   ![](_images/app-admin-composite.png)

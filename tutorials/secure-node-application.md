@@ -35,10 +35,12 @@ The code stucture follows a simple modular and MVC pattern. There are 2 folders 
 
 *  Create a regular user. You will need the user name and password to log in into the application. 
 *  Assign 'user' role to the new user. 
+   
    Note: Please refer "Define Client Role" section of "Create Client and configure it" Tutorial and "Create Realm Roles" tutorial.
      
 *  Create an admin user. You will need the user name and password to log in into the application. 
 *  Assign 'admin' role to the new user.
+   
    Note: Please refer "Define Client Role" section of "Create Client and configure it" Tutorial and "Create Realm Roles" tutorial.
 
 Once you complete the above steps, proceed with following steps to execute the sample application.

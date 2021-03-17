@@ -31,10 +31,17 @@
       },
       
       {
+         "description":"Learn how to create Client and configure it to register application with keycloak instance.",
+         "duration":"5 min",
+         "tutorial_name":"secure-app.md",
+         "title":"5. Create Client and configure it."
+      },
+      
+      {
          "description":"Learn how to create user using Keycloak Admin Console",
          "duration":"5 min",
          "tutorial_name":"create-user.md",
-         "title":"5. Create User using Keycloak Admin Console"
+         "title":"6. Create User using Keycloak Admin Console"
       },
       {
          "description":"Learn how to login to account console using Keycloak Admin Console",
@@ -42,12 +49,7 @@
          "tutorial_name":"Login-account-console.md",
          "title":"6. Login to account console using Keycloak Admin Console"
       },
-      {
-         "description":"Learn how to create Client and configure it to register application with keycloak instance.",
-         "duration":"5 min",
-         "tutorial_name":"secure-app.md",
-         "title":"7. Create Client and configure it."
-      },
+      
       {
          "description":"Learn how to use a Keycloak cluster to add authentication to a React applications and secure the services.",
          "duration":"5 min",

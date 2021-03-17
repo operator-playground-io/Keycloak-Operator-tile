@@ -17,17 +17,17 @@ Initially, there is no existing user in the new realm. Let’s create one using 
 
 **Step 3: Fill up the form with following field values:
 
-   **Username: myuser
+    Username: employee1
+    
     First Name: John
-    Last Name: Rodger**
+    
+    Last Name: Rodger
 
 
- ![](_images/add-user.png)
+ ![](_images/add-user.PNG)
  
 
 **Step 4: Click on `Save`.**
-
- ![](_images/add-user-form.png)
 
 
 ### Create Password
@@ -52,6 +52,30 @@ You should see the details on console like below.
  
 Please provide your confirmation by clicking on "Set Password" again.
 
+### Role Mapping to Users
+
+Step 1: Click the Role Mappings tab to assign realm roles to the user. 
+
+Realm roles list will be available in Available Roles list. 
+
+Step 2: Select one required role and click on the Add Selected > to assign it to the user.
+
+![](_images/user-role-mapping.png)
+
+After role assignment, assigned roles will be available under Assigned Roles list. 
+
+
+Similarly Create users : employee2 and employee3. Set the credential for them by following above steps.
+
+
+- Assign `app-admin` realm role to employee2 by following above steps.
+
+![](_images/admin-role-mapping.png)
+
+- Assign `app-user` and `app-admin` realm roles to employee3 by following above steps.
+
+![](_images/both-role-mapping.png)
+
 ### Conclusion
 
-User with its username and password is created.
+User with its username and password with Role mapping is created.

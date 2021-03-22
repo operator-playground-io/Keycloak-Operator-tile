@@ -31,17 +31,23 @@ The code stucture follows a simple modular and MVC pattern. There are 2 folders 
 
 *  Create a realm with name 'myrealm'.
 
-*  Create a client with name 'vanilla'. Use the following URL: http://##DNS.ip##:30300. Click on Roles tab and add 'user' and 'admin' roles.
+*  Create realm roles : app_user and app_admin. Please refer "Create Realm Roles" tutorial.
 
-*  Create a regular user. You will need the user name and password to log in into the application. 
-*  Assign 'user' role to the new user. 
+*  Create a client with name 'vanilla'. Use the following URL: http://##DNS.ip##:30300 as Root URL. Click on Roles tab of Client and add Roles: 'user' and 'admin'.
+
+   Note: Please refer "Define Client Role" section of "Create Client and configure it" Tutorial
+
+*  Create a regular user with username say: employee1. Create credential for this user. You will need the username and password to log in into the application. 
+
+*  Assign 'app_user' realm role to the new user(employee1). 
    
-   Note: Please refer "Define Client Role" section of "Create Client and configure it" Tutorial and "Create Realm Roles" tutorial.
+   Note: Please refer "Create Realm Roles" tutorial.
      
-*  Create an admin user. You will need the user name and password to log in into the application. 
-*  Assign 'admin' role to the new user.
+*  Create an admin user with username say: employee2. You will need the user name and password to log in into the application. Create credential for this user. 
+
+*  Assign 'app_admin' realm role to the new user(employee2).
    
-   Note: Please refer "Define Client Role" section of "Create Client and configure it" Tutorial and "Create Realm Roles" tutorial.
+   Note: Please refer "Create Realm Roles" tutorial.
 
 Once you complete the above steps, proceed with following steps to execute the sample application.
 

@@ -64,6 +64,12 @@
          "title":"9. Secure a Node.js Application using Keycloak.."
       },
       {
+         "description":"Learn how to use a Keycloak to secure a Java Spring REST Service and how to use the REST Service from a frontend application.",
+         "duration":"5 min",
+         "tutorial_name":"secure-java-application.md",
+         "title":"9. Secure a Java Spring REST Service using Keycloak.."
+      },
+      {
          "description":"Steps to cleanup Operator",
          "duration":"5 min",
          "tutorial_name":"cleanup.md",

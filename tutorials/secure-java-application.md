@@ -105,14 +105,11 @@ sed -i "s/ip-address/$ip_addr/" ./frontend/.env
 sed -i "s/ip-address/$ip_addr/" ./backend/src/main/resources/application.properties
 ```
 
-Get the client secret from 'course-management' client page, Credentials tab, Secret field and run following commands replacing 1234 with the correct secret. The secret is something like ebd161d4-0117-4598-9d62-94e1711e95dd
+Get the client secret from 'course-management' client page, Credentials tab, Secret field. Copy and run following commands replacing 1234 with the correct secret. The secret is something like ebd161d4-0117-4598-9d62-94e1711e95dd
 
-```execute
 sed -i "s/client-secret/1234/" ./frontend/.env
-```
-```execute
+
 sed -i "s/client-secret/1234/" ./backend/src/main/resources/application.properties
-```
 
 - Setup skaffold default repository to the local one.
 ```execute
@@ -147,8 +144,8 @@ http://##DNS.ip##:30600/access
 Method: POST
 
 Parameters:
-user - the name of the user (for example rose.white)
-password - the user password (for example test1234)
+- user - the name of the user (for example rose.white)
+- password - the user password (for example test1234)
 
 The access token is in the following format:
 

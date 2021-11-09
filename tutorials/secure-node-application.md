@@ -56,13 +56,13 @@ Once you complete the above steps, proceed with following steps to execute the s
 - Get the sample code.
 
 ```execute
-cd /home/student/projects && git clone https://github.com/Andi-Cirjaliu/edge-keycloak-sample.git
+cd /home/student/projects && git clone https://github.com/operator-playground-io/keycloak-node-sample.git
 ```
 
 - Navigate to the example.
 
 ```execute
-cd edge-keycloak-sample
+cd keycloak-node-sample
 ```
 
 - Set the Keycloak instance IP.

@@ -46,13 +46,13 @@ Once you complete the above steps, proceed with following steps to execute the s
 - Get the sample code.
 
 ```execute
-cd /home/student/projects && git clone https://github.com/Andi-Cirjaliu/edge-keycloak-react.git
+cd /home/student/projects && git clone https://github.com/operator-playground-io/keycloak-react-sample.git
 ```
 
 - Navigate to the example.
 
 ```execute
-cd edge-keycloak-react
+cd keycloak-react-sample
 ```
 
 - Set the Keycloak instance IP.
